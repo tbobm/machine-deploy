@@ -1,0 +1,27 @@
+---
+
+- name: directories
+  gather_facts: no
+  hosts: localhost
+
+  tasks:
+    - name: cleanup directory
+      file:
+        state: absent
+        path: "/home/bob/{{ item }}"
+      loop:
+        - Documents
+        - Pictures
+        - Desktop
+        - Music
+        - Templates
+
+    - name: create directories
+      file:
+        state: directory
+        path: "/home/bob/{{ item }}"
+      loop:
+        - ghub
+        - .vim
+        - .ssh/config
+
