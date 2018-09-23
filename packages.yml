@@ -25,3 +25,4 @@
         - nodejs
         - rust
         - xclip
+        - sshpass
