@@ -2,8 +2,10 @@
 
 - name: setup arch
   hosts: localhost
-  gather_facts: no
+  gather_facts: false
   become: true
 
   roles:
     - packages
+    - architecture
+    - repositories
