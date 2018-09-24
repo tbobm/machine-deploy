@@ -1,0 +1,15 @@
+---
+
+- name: Clone a repository
+  git:
+    repo: "git@github.com:tbobm/{{ item }}"
+    version: master
+    dest: "/home/bob/ghub/{{ item }}"
+    accept_hostkey: "yes"
+  become: "no"
+  loop:
+    - etnawrapper
+    - gogit
+    - titan
+    - titan-etna
+    - gentoo-conf

@@ -1,0 +1,9 @@
+---
+
+- name: setup arch
+  hosts: localhost
+  gather_facts: no
+  become: true
+
+  roles:
+    - packages
