@@ -1,11 +1,11 @@
 ---
 
 - name: setup arch
-  hosts: localhost
+  hosts: all
   gather_facts: false
   become: true
 
   roles:
     - packages
     - architecture
-    - repositories
+      # - repositories
