@@ -9,7 +9,6 @@
   become: "no"
   loop:
     - etnawrapper
+    - malloc
     - gogit
-    - titan
-    - titan-etna
     - gentoo-conf
