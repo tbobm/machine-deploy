@@ -10,6 +10,7 @@
     - Desktop
     - Music
     - Templates
+  tags: archi
 
 - name: create directories
   file:
@@ -19,3 +20,4 @@
     - ghub
     - .vim
     - .ssh/config
+  tags: archi
