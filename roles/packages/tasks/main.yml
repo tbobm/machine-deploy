@@ -16,7 +16,13 @@
     - python3
     - python-pip
     - git
-    - nodejs
     - rust
     - xclip
     - sshpass
+
+- name: ensure not installed
+  pacman:
+    name: "{{ item }}"
+    state: absent
+  loop:
+    - nodejs
