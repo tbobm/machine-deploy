@@ -19,6 +19,8 @@
     - rust
     - xclip
     - sshpass
+    - pass
+    - passmenu
 
 - name: ensure not installed
   pacman:
@@ -26,3 +28,4 @@
     state: absent
   loop:
     - nodejs
+...
