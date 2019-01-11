@@ -21,6 +21,7 @@
     - sshpass
     - pass
     - passmenu
+    - bash-completion
 
 - name: ensure not installed
   pacman:
