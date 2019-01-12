@@ -8,4 +8,6 @@
   roles:
     - packages
     - architecture
-      # - repositories
+    - repositories
+    - configuration
+...

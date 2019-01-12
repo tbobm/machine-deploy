@@ -1,0 +1,12 @@
+---
+- name: copy ssh directory main content
+  tags: "configuration"
+  file:
+    src: "{{ lookup('env', 'HOME') }}/.ssh/{{ item }}"
+    dest: "{{ user }}/.ssh/{{ item }}"
+  loop:
+    - "id_rsa"
+    - "id_rsa.pub"
+    - "config"
+
+...
