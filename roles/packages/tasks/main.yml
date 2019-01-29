@@ -29,4 +29,15 @@
     state: absent
   loop:
     - nodejs
+
+- name: bluetooth
+  tags: 
+    - "bluetooth"
+  pacman:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - bluez
+    - bluez-utils
+    - blueberry
 ...
